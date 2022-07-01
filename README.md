@@ -49,7 +49,7 @@ $$
 
 ### Data
 
-The data used in this project is available at [Kaggle](https://www.kaggle.com/datasets/currie32/crimes-in-chicago) and can be downloaded directly using [Kaggle's API](https://www.kaggle.com/docs/api) using `kaggle datasets download -d currie32/crimes-in-chicago -p data/ --unzip`, which will download and unzip directly inside `data/` folder.
+The data used in this project is available at [Kaggle](https://www.kaggle.com/datasets/currie32/crimes-in-chicago) and can be downloaded directly using [Kaggle's API](https://www.kaggle.com/docs/api) using `kaggle datasets download -d currie32/crimes-in-chicago -p raw/ --unzip`, which will download and unzip directly inside `raw/` folder.
 
 ### Visualization and Selection
 
@@ -58,6 +58,8 @@ Both visualization and selection are done using `python`, and an environment wit
 Visualization is done in `data.ipynb`
 
 Data is then selected and filered to reduce the computational power needed for the optimization model.
+
+`TODO` cooked folder
 
 ### Location definitions
 
@@ -75,7 +77,7 @@ Data is then selected and filered to reduce the computational power needed for t
 
 ## Troubleshooting
 
-- If [`scipy`](https://scipy.org/)'s installation fails by not finding BLAS or Lapack libraries, follow [these steps](https://stackoverflow.com/questions/69954587/no-blas-lapack-libraries-found-when-installing-scipy-on-macos), and make sure the python version that is being used has an available wheel for `scipy`.
+- If [`scipy`](https://scipy.org/)'s (and plotly, plotly-express, folium) installation fails by not finding BLAS or Lapack libraries, follow [these steps](https://stackoverflow.com/questions/69954587/no-blas-lapack-libraries-found-when-installing-scipy-on-macos), and make sure the python version that is being used has an available wheel for `scipy`.
 
 [charles]: https://github.com/charlespaulinoo
 [DISSERTAO_CHARLES_PAULINO_DE_OLIVEIRA]: https://sig-arquivos.cefetmg.br/arquivos/2020157098a09e2498076fd7bdf5ac24e/DISSERTAO_CHARLES_PAULINO_DE_OLIVEIRA.pdf
